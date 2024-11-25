@@ -1,13 +1,13 @@
 import { Sidebar } from '@/components/layout/sidebar/Sidebar';
 import { OrderPage } from '@/pages/OrderPage';
-import { Invoice } from '@/pages/InvoicePage';
+import { InvoicePage } from '@/pages/InvoicePage';
 import { Settings } from '@/pages/SettingsPage';
 import { useParams, useNavigate } from 'react-router-dom';
 import { PageInProgress } from '@/pages/PageInProgress';
 
 const menuConfig = {
   orders: { component: OrderPage, title: 'Moje objednávky' },
-  invoice: { component: Invoice, title: 'Faktury' },
+  invoice: { component: InvoicePage, title: 'Faktury' },
   settings: { component: Settings, title: 'Nastavení účtu' },
   progress: { component: PageInProgress, title: 'Ve vývoji' },
 };
