@@ -1,13 +1,10 @@
 import React from 'react';
 
-interface MagnifyingGlassIconProps extends React.SVGProps<SVGSVGElement> {
-  color?: string;
+interface MagnifyingGlassIconProps {
+  color: string;
 }
 
-const MagnifyingGlassIcon: React.FC<MagnifyingGlassIconProps> = ({
-  color = '#0F172A',
-  ...props
-}) => (
+const MagnifyingGlassIcon: React.FC<MagnifyingGlassIconProps> = ({ color, ...props }) => (
   <svg
     width="20"
     height="20"

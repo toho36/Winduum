@@ -1,10 +1,10 @@
 import React from 'react';
 
-interface PhotoIconProps extends React.SVGProps<SVGSVGElement> {
-  color?: string;
+interface PhotoIconProps {
+  color: string;
 }
 
-const PhotoIcon: React.FC<PhotoIconProps> = ({ color = '#9ca3af', ...props }) => (
+const PhotoIcon: React.FC<PhotoIconProps> = ({ color, ...props }) => (
   <div className="w-12 h-12 rounded-lg bg-gray-200 flex items-center justify-center">
     <svg
       width="20"

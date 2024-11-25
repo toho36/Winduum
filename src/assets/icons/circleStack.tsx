@@ -1,10 +1,10 @@
 import React from 'react';
 
-interface CircleStackIconProps extends React.SVGProps<SVGSVGElement> {
+interface CircleStackIconProps {
   color: string;
 }
 
-const CircleStackIcon: React.FC<CircleStackIconProps> = ({ color = '#0F172A', ...props }) => (
+const CircleStackIcon: React.FC<CircleStackIconProps> = ({ color, ...props }) => (
   <svg
     width="20"
     height="20"

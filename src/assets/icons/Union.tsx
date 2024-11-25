@@ -1,10 +1,10 @@
 import React from 'react';
 
-interface UnionIconProps extends React.SVGProps<SVGSVGElement> {
+interface UnionIconProps {
   color: string;
 }
 
-const UnionIcon: React.FC<UnionIconProps> = ({ color = 'black', ...props }) => (
+const UnionIcon: React.FC<UnionIconProps> = ({ color, ...props }) => (
   <svg
     width="20"
     height="20"

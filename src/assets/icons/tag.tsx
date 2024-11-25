@@ -1,10 +1,10 @@
 import React from 'react';
 
-interface TagIconProps extends React.SVGProps<SVGSVGElement> {
-  color?: string;
+interface TagIconProps {
+  color: string;
 }
 
-const TagIcon: React.FC<TagIconProps> = ({ color = '#0F172A', ...props }) => (
+const TagIcon: React.FC<TagIconProps> = ({ color, ...props }) => (
   <svg
     width="20"
     height="20"
