@@ -1,7 +1,7 @@
 import React from 'react';
 
 interface ShoppingBagIconProps extends React.SVGProps<SVGSVGElement> {
-  color?: string;
+  color: string;
 }
 const ShoppingBagIcon: React.FC<ShoppingBagIconProps> = ({ color = 'black', ...props }) => (
   <svg

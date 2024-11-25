@@ -1,7 +1,7 @@
 import App from '@/App';
+import { MyAccount } from '@/pages/MyAccountPage';
 import { NotFoundPage } from '@/pages/NotFoundPage';
-import { createBrowserRouter } from 'react-router-dom';
-import { Preview } from '@/pages/Preview';
+import { createBrowserRouter, Navigate } from 'react-router-dom';
 
 export const router = createBrowserRouter([
   {
@@ -11,11 +11,15 @@ export const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Preview />,
+        element: <Navigate to="/my-account/orders" />,
       },
       {
         path: '/404',
         element: <NotFoundPage />,
+      },
+      {
+        path: '/my-account/:menuItem',
+        element: <MyAccount />,
       },
     ],
   },

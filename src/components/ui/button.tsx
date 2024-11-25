@@ -13,6 +13,8 @@ const buttonVariants = cva('inline-flex items-center justify-center', {
         'bg-primary hover:bg-primary-hover  rounded-lg  py-md px-6xl gap-x-sm  text-body-primary',
       primaryIcon:
         'bg-primary hover:bg-primary-hover rounded-lg p-md gap-0 min-w-[256px] w-[232px]   text-body-primary justify-between',
+      primaryIconOutline:
+        'bg-body hover:bg-primary-hover rounded-lg p-md gap-0 min-w-[256px] w-[232px] hover:text-body-primary text-black justify-between',
 
       default: 'bg-primary text-primary-foreground shadow hover:bg-primary/90',
       destructive: 'bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90',
