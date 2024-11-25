@@ -25,6 +25,7 @@ const buttonVariants = cva('inline-flex items-center justify-center', {
       disabled: 'bg-gray-200  text-gray-400 rounded-lg  py-md px-2xl',
       warning:
         'bg-[#fceaea] text-red-500 hover:bg-[#E3D3D3] rounded-lg p-md gap-0 min-w-[256px] w-[232px] ',
+      link: 'flex text-[14px] font-medium leading-6 gap-xs items-center hover:text-primary',
       warningOutline:
         'text-md font-semibold leading-6 bg-white border border-input text-error hover:bg-error hover:text-body-primary rounded-lg p-md gap-0 min-w-[166px] ',
     },
