@@ -1,10 +1,10 @@
 import React from 'react';
 
-interface CogIconProps extends React.SVGProps<SVGSVGElement> {
-  color?: string;
+interface CogIconProps {
+  color: string;
 }
 
-const CogIcon: React.FC<CogIconProps> = ({ color = '#0F172A', ...props }) => (
+const CogIcon: React.FC<CogIconProps> = ({ color, ...props }) => (
   <svg
     width="20"
     height="20"
