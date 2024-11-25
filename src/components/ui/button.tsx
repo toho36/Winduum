@@ -15,12 +15,12 @@ const buttonVariants = cva('inline-flex items-center justify-center', {
         'bg-primary hover:bg-primary-hover rounded-lg p-md gap-0 min-w-[256px] w-[232px]   text-body-primary justify-between',
       primaryIconOutline:
         'bg-body hover:bg-primary-hover rounded-lg p-md gap-0 min-w-[256px] w-[232px] hover:text-body-primary text-black justify-between',
-
       default: 'bg-primary text-primary-foreground shadow hover:bg-primary/90',
       destructive: 'bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90',
+      outline:
+        'text-md font-semibold leading-6 border border-primary text bg-white rounded-lg  py-md px-2xl gap-x-sm min-w-[166px] hover:bg-primary-hover hover:text-body-primary',
       outlineDropDown:
         'text-md font-semibold leading-6 border border-primary text bg-white rounded-lg  py-md px-2xl gap-x-sm min-w-[166px] ',
-
       secondary: 'bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80',
       disabled: 'bg-gray-200  text-gray-400 rounded-lg  py-md px-2xl',
       warning:
