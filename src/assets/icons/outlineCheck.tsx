@@ -1,7 +1,7 @@
 import React from 'react';
 
 interface OutlineCheckIconProps extends React.SVGProps<SVGSVGElement> {
-  color?: string;
+  color: string;
 }
 
 const OutlineCheckIcon: React.FC<OutlineCheckIconProps> = ({ color = '#0F172A', ...props }) => (
