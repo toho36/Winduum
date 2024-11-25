@@ -16,8 +16,6 @@ type OrderActionsProps = {
  */
 export const OrderActions = ({ orderId }: OrderActionsProps) => {
   const [hoveredButton, setHoveredButton] = useState<string | null>(null);
-  const [activeButton, setActiveButton] = useState<string | null>(null);
-
   const handleMouseEnter = (buttonName: string, orderId: string) => {
     setHoveredButton(`${buttonName}-${orderId}`);
   };
@@ -26,13 +24,9 @@ export const OrderActions = ({ orderId }: OrderActionsProps) => {
     setHoveredButton(null);
   };
 
-  const handleButtonClick = (buttonName: string, orderId: string) => {
-    setActiveButton(`${buttonName}-${orderId}`);
-  };
-
   const getIconColor = (buttonName: string, orderId: string) => {
     const buttonKey = `${buttonName}-${orderId}`;
-    return hoveredButton === buttonKey || activeButton === buttonKey ? '#3b82f6' : '#171717';
+    return hoveredButton === buttonKey ? '#3b82f6' : '#171717';
   };
 
   return (
@@ -41,7 +35,6 @@ export const OrderActions = ({ orderId }: OrderActionsProps) => {
         variant={'link'}
         onMouseEnter={() => handleMouseEnter('zopakovat', orderId)}
         onMouseLeave={handleMouseLeave}
-        onClick={() => handleButtonClick('zopakovat', orderId)}
       >
         Zopakovat
         <ArrowUturnLeftIcon color={getIconColor('zopakovat', orderId)} />
@@ -50,7 +43,6 @@ export const OrderActions = ({ orderId }: OrderActionsProps) => {
         variant={'link'}
         onMouseEnter={() => handleMouseEnter('storno', orderId)}
         onMouseLeave={handleMouseLeave}
-        onClick={() => handleButtonClick('storno', orderId)}
       >
         Storno
         <XMarkIcon color={getIconColor('storno', orderId)} />
