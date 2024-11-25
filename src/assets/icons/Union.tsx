@@ -1,7 +1,7 @@
 import React from 'react';
 
 interface UnionIconProps extends React.SVGProps<SVGSVGElement> {
-  color?: string;
+  color: string;
 }
 
 const UnionIcon: React.FC<UnionIconProps> = ({ color = 'black', ...props }) => (
